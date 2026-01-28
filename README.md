@@ -117,19 +117,19 @@ The final Urban Sustainability Score is computed as:
 All four dimensions contribute equally to the final score.
 
 # Visualizations
-# Sustainability Score by Country
+ Sustainability Score by Country
 
   A bar chart ranking countries by their Urban Sustainability Score, highlighting top and bottom performers.
 
-# Radar Chart (Top, Median, Bottom Countries)
+ Radar Chart (Top, Median, Bottom Countries)
 
   Radar plots compare dimension-level performance, revealing sustainability imbalances even among high-ranking countries.
 
-# Urbanization vs Sustainability
+ Urbanization vs Sustainability
 
   A scatter plot illustrating the relationship between urban population share and sustainability outcomes, showing that urbanization alone does not guarantee sustainability.
 
-# Environmental Trade-Offs
+ Environmental Trade-Offs
 
   A scatter plot of CO₂ emissions per capita versus forest coverage, demonstrating the tension between economic development and environmental preservation.
 
