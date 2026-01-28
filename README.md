@@ -13,8 +13,11 @@ The entire workflow is implemented in Python using widely adopted data science l
 # Objectives
 
   Build a transparent and reproducible urban sustainability index.
+  
   Integrate multidimensional sustainability indicators into a single score.
+  
   Analyze the relationship between urbanization and sustainability outcomes.
+  
   Provide clear visualizations to support interpretation.
 
 # Dataset
@@ -55,10 +58,14 @@ This step ensures consistency and prevents bias during normalization.
 To improve comparability across countries, several derived indicators were created:
 
 Feature	Description
-CO₂ per capita	Total CO₂ emissions ÷ population
-GDP per capita	GDP ÷ population
-Urban population (%)	Urban population ÷ total population × 100
-Population density	Population ÷ land area
+
+CO₂ per capita = Total CO₂ emissions ÷ population
+
+GDP per capita =	GDP ÷ population
+
+Urban population (%) = Urban population ÷ total population × 100
+
+Population density =	Population ÷ land area
 
 # Sustainability Dimensions
 
@@ -67,11 +74,13 @@ Indicators were grouped into four equally weighted dimensions:
 🌱 Environmental Dimension
 
   CO₂ emissions per capita (negative indicator)
+  
   Forest area (%)
 
 👥 Social Dimension
 
   Life expectancy
+  
   Physicians per 1,000 people
 
 💰 Economic Dimension
@@ -83,16 +92,20 @@ GDP per capita
 🏙️ Urban Dimension
 
   Urban population (%)
+  
   Population density (negative indicator)
 
 Negative indicators were inverted after normalization so that higher values always represent better sustainability.
 
 # Normalization Method
 
-  Min–Max Scaling applied to each indicator
-  Scaled values range from 0 (worst) to 1 (best)
-  Indicators with insufficient data were excluded automatically
-  Negative indicators were reversed post-scaling
+  Min–Max Scaling applied to each indicator.
+  
+  Scaled values range from 0 (worst) to 1 (best).
+  
+  Indicators with insufficient data were excluded automatically.
+  
+  Negative indicators were reversed post-scaling.
 
 This ensures comparability across different units and scales.
 
@@ -100,9 +113,12 @@ This ensures comparability across different units and scales.
 
 Each dimension score is calculated as the mean of its normalized indicators:
 
-  Environmental Score
-  Social Score
-  Economic Score
+  Environmental Score.
+  
+  Social Score.
+  
+  Economic Score.
+  
   Urban Score
 
 This approach maintains transparency and avoids subjective weighting.
@@ -136,23 +152,33 @@ All four dimensions contribute equally to the final score.
 # Key Findings
 
   High-income countries tend to perform well economically and socially but often face environmental challenges.
+  
   Several mid-income countries achieve balanced sustainability profiles across dimensions.
+  
   High population density can negatively impact urban sustainability when not supported by infrastructure.
+  
   Urbanization must be accompanied by strong healthcare, employment, and environmental policies to be sustainable.
 
 # Limitations
 
   Country-level aggregation masks regional and city-level disparities.
+  
   Equal weighting may not reflect real-world policy priorities.
+  
   Data availability restricts indicator selection.
+  
   Emissions data is production-based, not consumption-based.
 
 # Future Enhancements
 
   Introduce custom or policy-driven weights.
+  
   Extend analysis to multiple years (time series).
+  
   Include renewable energy and air quality indicators.
+  
   Add geospatial mapping using GeoPandas.
+  
   Apply the framework to city-level datasets.
 
 # Conclusion
@@ -165,8 +191,13 @@ The framework is flexible and can be expanded as better data and new indicators 
 #Technologies Used
 
   Python
+  
   Pandas
+  
   NumPy
+  
   Scikit-learn
+  
   Matplotlib
+  
   GeoPandas
