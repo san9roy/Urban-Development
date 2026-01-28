@@ -188,7 +188,7 @@ While simplified, the index captures essential trade-offs between development, u
 
 The framework is flexible and can be expanded as better data and new indicators become available.
 
-#Technologies Used
+# Technologies Used
 
   Python
   
