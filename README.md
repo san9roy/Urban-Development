@@ -111,7 +111,7 @@ This approach maintains transparency and avoids subjective weighting.
 
 The final Urban Sustainability Score is computed as:
 
-  # USI = Mean(Environmental, Social, Economic, Urban)
+  USI = Mean(Environmental, Social, Economic, Urban)
 
 
 All four dimensions contribute equally to the final score.
